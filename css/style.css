@@ -40,6 +40,12 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+p span {
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
 .container {
   max-width: 1850px;
   margin: 0 auto;
@@ -221,6 +227,121 @@ body {
   transform: rotate(45deg);
   margin: 5px auto;
   opacity: 0;
+}
+
+.engine {
+  background-color: #000;
+  padding-top: 110px;
+}
+.engine-container {
+  max-width: 1830px;
+  margin: 0 auto;
+  /* padding: 0 10px; */
+  background-color: #1c1c1c;
+  padding-top: 25px;
+  padding-bottom: 75px;
+}
+.engine__top-text {
+  font-size: 16px;
+  text-align: right;
+  color: #a6a6a6;
+  margin-bottom: 31px;
+  padding-right: 25px;
+}
+
+.engine__title {
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+  max-width: 511px;
+  margin: 0 auto 22px auto;
+}
+.engine__text {
+  text-align: center;
+  color: #a6a6a6;
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 415px;
+  margin: 0 auto;
+}
+
+.engine__subtitle {
+  max-width: 311px;
+  font-size: 18px;
+  color: #a6a6a6;
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+.engine__box {
+  display: flex;
+  border-top: 1px solid rgb(43, 43, 43);
+}
+
+.engine__box:last-child {
+  border-bottom: 1px solid rgb(43, 43, 43);
+}
+.engine__box-left {
+  padding: 25px 30px;
+  border-right: 1px solid #2b2b2b;
+}
+.engine__bot-title {
+  font-size: 26px;
+  color: #fff;
+  max-width: 267px;
+  margin-bottom: 70px;
+}
+.engine__box-left-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.engine__box-left-bottom-img {
+}
+.engine__box-left-bottom-p {
+  font-size: 21px;
+  color: #fff;
+}
+
+.engine__box-right {
+  padding: 25px 40px 25px 70px;
+  width: 100%;
+}
+.engine__box-right-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 75px;
+}
+.engine__box-right-top-title {
+  font-size: 21px;
+  max-width: 770px;
+  color: #a6a6a6;
+}
+.engine__box-right-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.engine__box-right-bottom p {
+  font-weight: 600;
+  color: #a6a6a6;
+  font-size: 16px;
+}
+.engine__box-right-bottom-btn {
+  display: flex;
+  gap: 12px;
+  color: #fff;
+  font-size: 18px;
+  padding: 21px 40px;
+}
+
+.engine__box-right-bottom-btn--white {
+  border: 1px solid #fff;
+  background: transparent;
+}
+
+.engine__box-right-bottom-btn--blue {
+  background-color: #000aff;
 }
 
 /* Анимация колесика */
