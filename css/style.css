@@ -1,0 +1,258 @@
+@font-face {
+  font-family: 'NeueMontreal-Bold';
+  src: url('../fonts/NeueMontreal-Bold.woff2') format('woff2'),
+    url('../fonts/NeueMontreal-Bold.woff') format('woff'),
+    url('../fonts/NeueMontreal-Bold.ttf') format('truetype');
+  font-weight: 700; /* Обычное начертание */
+  font-style: normal;
+  font-display: swap; /* Оптимизация загрузки (шрифт показывается сразу с фолбэком, потом заменяется) */
+}
+
+body {
+  font-family: 'MyFont', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  appearance: none; /* Убирает системные стили (особенно важно для iOS/Safari) */
+  -webkit-appearance: none; /* Для поддержки старых браузеров */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1850px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  height: 75px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav__list-li a {
+  color: #6a6a6a;
+  font-size: 21px;
+  transition: all 0.3s;
+}
+
+.nav__list-li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.nav__right {
+  font-family: 'NeueMontreal-Bold';
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  gap: 4px;
+}
+
+.promo {
+  background-color: #e5e5e5;
+  min-height: calc(100vh - 81px);
+  background-image: url('../images/ocean.png');
+  background-position: center;
+}
+
+.promo__box {
+  padding-top: 100px;
+}
+
+.promo__box-container {
+  display: flex;
+  background-color: rgba(146, 210, 255, 0.24);
+  max-width: 1513px;
+  margin: 0 auto;
+  border-radius: 16px;
+  justify-content: space-between;
+  padding: 40px 89px 95px 123px;
+  position: relative;
+}
+
+.line-wrapper {
+  position: absolute;
+  top: 395px;
+  right: 341px;
+}
+
+.promo__box-wrapper {
+  padding-top: 92px;
+  max-width: 510px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.promo__box-container-img {
+  z-index: 50;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.promo___box-text {
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-transform: lowercase;
+  color: #b0b0b0;
+  font-weight: 500;
+}
+
+.promo___box-text span {
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.promo__box-btn {
+  display: flex;
+  gap: 10px;
+  padding: 17px 40px 10px 40px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.promo__box-btn--one {
+  background-color: #000aff;
+}
+
+.promo__box-btn--two {
+  background-color: black;
+}
+
+.promo__bottom {
+  display: flex;
+  gap: 525px;
+  padding-top: 50px;
+  position: relative;
+}
+
+.promo__bottom-left {
+  color: #fff;
+  font-size: 14px;
+}
+
+.promo__bottom-right {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Контейнер для мышки и стрелок */
+.scroll-hint {
+  position: absolute;
+  bottom: -18px;
+  right: 0;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+/* Сама мышка */
+.mouse {
+  width: 15px;
+  height: 30px;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Колесико (анимируем) */
+.wheel {
+  width: 4px;
+  height: 7px;
+  background: #000000;
+  border-radius: 2px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scrollWheel 2s infinite;
+}
+
+/* Стрелки (анимируем по очереди) */
+.arrows {
+  margin-top: 10px;
+}
+
+.arrow {
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  transform: rotate(45deg);
+  margin: 5px auto;
+  opacity: 0;
+}
+
+/* Анимация колесика */
+@keyframes scrollWheel {
+  0%,
+  100% {
+    top: 10px;
+    opacity: 1;
+  }
+  50% {
+    top: 20px;
+    opacity: 0.5;
+  }
+}
+
+/* Анимация стрелок (поочередное появление) */
+.arrow:nth-child(1) {
+  animation: fadeArrow 2s infinite;
+}
+.arrow:nth-child(2) {
+  animation: fadeArrow 2s infinite 0.3s;
+}
+.arrow:nth-child(3) {
+  animation: fadeArrow 2s infinite 0.6s;
+}
+
+@keyframes fadeArrow {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
