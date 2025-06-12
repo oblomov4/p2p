@@ -276,6 +276,8 @@ p span {
 .engine__box {
   display: flex;
   border-top: 1px solid rgb(43, 43, 43);
+  position: relative;
+  overflow: hidden;
 }
 
 .engine__box:last-child {
@@ -306,7 +308,58 @@ p span {
 .engine__box-right {
   padding: 25px 40px 25px 70px;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
+
+.engine__box-right--one::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #000aff; /* Синий цвет (можно заменить) */
+  z-index: -1;
+  transition: width 0.5s ease; /* Плавное заполнение */
+}
+
+.engine__box-right--two::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #000; /* Синий цвет (можно заменить) */
+  z-index: -1;
+  transition: width 0.5s ease; /* Плавное заполнение */
+}
+
+.engine__box-right--three::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #dbdbdb; /* Синий цвет (можно заменить) */
+  z-index: -1;
+  transition: width 0.5s ease; /* Плавное заполнение */
+}
+
+.engine__box-left--one:hover ~ .engine__box-right--one::before {
+  width: 100%;
+}
+
+.engine__box-left--two:hover ~ .engine__box-right--two::before {
+  width: 100%;
+}
+
+.engine__box-left--three:hover ~ .engine__box-right--three::before {
+  width: 100%;
+}
+
 .engine__box-right-top {
   display: flex;
   justify-content: space-between;
