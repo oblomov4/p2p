@@ -9,16 +9,18 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
+      <button class="burger"><span></span><span></span><span></span></button>
       <div class="container">
         <nav class="nav">
-          <a class="nav__logo-link" href="#">
+          <a class="nav__logo-link" href="/">
             <img class="nav__logo-img" src="images/logo.png" alt="B2B" />
           </a>
 
@@ -62,28 +64,30 @@
             </div>
           </div>
 
-          <div class="promo__bottom">
-            <p class="promo__bottom-left">© AI KONSULTANTAS</p>
-            <p class="promo__bottom-right">*B2B leads generavimo paslaugos pritaikytos augimui</p>
-            <div class="scroll-hint">
-              <div class="mouse">
-                <div class="wheel"></div>
-                <!-- Колесико -->
-              </div>
-              <div class="arrows">
-                <div class="arrow"></div>
-                <!-- Стрелка 1 -->
-                <div class="arrow"></div>
-                <!-- Стрелка 2 -->
-                <div class="arrow"></div>
-                <!-- Стрелка 3 -->
+          <div class="absolute">
+            <div class="promo__bottom">
+              <p class="promo__bottom-left">© AI KONSULTANTAS</p>
+              <p class="promo__bottom-right">*B2B leads generavimo paslaugos pritaikytos augimui</p>
+              <div class="scroll-hint">
+                <div class="mouse">
+                  <div class="wheel"></div>
+                  <!-- Колесико -->
+                </div>
+                <div class="arrows">
+                  <div class="arrow"></div>
+                  <!-- Стрелка 1 -->
+                  <div class="arrow"></div>
+                  <!-- Стрелка 2 -->
+                  <div class="arrow"></div>
+                  <!-- Стрелка 3 -->
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <main class="main">
+    <!-- <main class="main">
       <section class="engine">
         <div class="container">
           <div class="engine-container">
@@ -506,11 +510,8 @@
             </p>
 
             <div class="about__swiper">
-              <!-- Slider main container -->
               <div class="swiper1 swiper">
-                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                  <!-- Slides -->
                   <div class="swiper-slide">
                     <div class="about__swiper-box">
                       <div class="about__swiper-box-top">
@@ -585,15 +586,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- If we need pagination -->
-                <!-- <div class="swiper-pagination"></div> -->
-
-                <!-- If we need navigation buttons -->
-                <!-- <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div> -->
-
-                <!-- If we need scrollbar -->
-                <!-- <div class="swiper-scrollbar"></div> -->
               </div>
             </div>
           </div>
@@ -672,9 +664,7 @@
             </p>
 
             <div class="swiper2 swiper">
-              <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
-                <!-- Slides -->
                 <div class="swiper-slide">
                   <div class="our-team__slide">
                     <img src="images/our-team1.png" alt="" />
@@ -775,7 +765,7 @@
       </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="about--decor"></div>
         <div class="footer___top">
@@ -824,7 +814,8 @@
       </div>
     </footer> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
     <script src="js/main.js"></script>
   </body>
 </html>
