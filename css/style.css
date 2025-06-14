@@ -953,7 +953,6 @@ p span {
 .our-team {
   background-color: #000;
   padding-top: 75px;
-  padding-bottom: 75px;
 }
 
 .our-team__title {
@@ -976,6 +975,7 @@ p span {
 .our-team__wrapper {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 95px;
 }
 .our-team__box {
   position: relative;
@@ -1033,6 +1033,196 @@ p span {
 
 .our-team__box:hover .our-team__box-text {
   transform: translateY(0);
+}
+
+.our__team-bottom {
+  padding-top: 75px;
+  padding-bottom: 150px;
+}
+
+.our-team__slide {
+  max-width: 235px;
+  border: 12px;
+  background-color: #131416;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 155px;
+  border-radius: 12px;
+}
+
+.form-section {
+  background-color: #000;
+  padding-top: 75px;
+  padding-bottom: 105px;
+}
+.container {
+}
+.form-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.form-section-left {
+  max-width: 520px;
+}
+.form-section-left-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+.form-section-left-subtitle {
+  font-size: 18px;
+  color: #909090;
+  font-weight: 700;
+}
+.form-section-right {
+  display: flex;
+  gap: 50px;
+}
+.form-section-right-subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #909090;
+  max-width: 415px;
+  text-align: right;
+  align-self: flex-end;
+}
+.form-section-right-form {
+  border-left: 1px solid #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  width: 483px;
+  padding-left: 65px;
+  padding-right: 111px;
+  padding-top: 60px;
+}
+
+.form-section-right-form h3 {
+  max-width: 265px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 45px;
+}
+.form-section-right-form-info {
+  font-size: 16px;
+  font-weight: 700;
+  color: #c0c0c0;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.form-section-right-form-info span {
+  display: block;
+  width: 40px;
+  height: 4px;
+  background-color: #000691;
+}
+.form-section-right-form-input {
+  font-size: 16px;
+  color: #c0c0c0;
+  font-weight: 700;
+  padding-bottom: 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #3c3c3c;
+  margin-bottom: 40px;
+  transition: border-bottom 0.3s ease;
+}
+
+.form-section-right-form-input::placeholder {
+  text-transform: capitalize;
+}
+
+.form-section-right-form-input:focus,
+.form-section-right-form-textarea:focus {
+  border-bottom: 2px solid #2196f3; /* Синяя нижняя граница при фокусе */
+  outline: none; /* Убираем стандартный outline */
+}
+
+.form-section-right-form-textarea {
+  font-size: 16px;
+  color: #c0c0c0;
+  font-weight: 700;
+  padding-bottom: 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #3c3c3c;
+  margin-bottom: 40px;
+  transition: border-bottom 0.3s ease;
+  padding-bottom: 10px;
+  resize: none;
+}
+
+.form-section-right-form-textarea::placeholder {
+  text-transform: capitalize;
+  padding-bottom: 60px;
+}
+
+.form-section-right-form-btn {
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  justify-content: center;
+  gap: 5px;
+  padding: 14px 0;
+  background-color: #1c4eff;
+}
+
+.footer {
+  background-color: #000;
+}
+.container {
+}
+.footer___top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px 0;
+}
+.footer__top-list {
+  display: flex;
+  gap: 31px;
+  text-transform: capitalize;
+}
+
+.footer__top-list--center {
+  justify-self: center;
+}
+
+.footer__top-li {
+}
+.footer__top-li-a {
+  color: #888888;
+  font-weight: 600;
+  font-size: 18px;
+}
+.footer__top-logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: #cecece;
+  justify-self: end;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.footer__bottom-left {
+  color: #484848;
+  font-size: 14px;
+}
+.footer__bottom-right {
+  font-size: 16px;
+  color: #909090;
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
 
 /* Анимация колесика */
